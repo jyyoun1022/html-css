@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit-reset</title>
+</head>
+<body>
+    <form action="register.php" method="post">
+        <fieldset>
+        <h2>메일링 리스트 등록</h2>
+        <label>메일 주소<input type="text"> </label>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시 입력">
+    </fieldset>
+        <fieldset>
+            <legend>submit버튼에 이미지 사용하기</legend>
+            <label>아이디<input type="text" size="15"></label>
+            <label>비밀번호<input type="password" size="15"></label>
+            <input type="image" id="butt" src="login.jpg" alt="로그인버튼">
+            <input type="button" value="새탭 열기" onclick="window.close()"><br>
+<label>첨부파일<input type="file" ></label>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

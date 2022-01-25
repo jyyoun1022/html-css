@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼과 체크박스 삽입하기</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        form fieldset{
+            margin-bottom: 25px;
+        }
+        form legend{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        form label.reg{
+            font-size: 12px;
+            color: springgreen;
+            font-weight: bold;
+            width: 110px;
+            float: left;
+            text-align: right;
+            margin-right: 10ppx;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- name:라디오,체크박스 버튼이 여러개 있을 경우, 구분하기위해 이름을 지정합니다.
+    라디오 버튼은 여러개 중에서 하나만 선택하는 것이기 때문에 관련있는 그룹끼리는 같은nmae속성 값을 만듭니다.
+
+    value: 선택한 라디오 버튼이나 체크박스를 서버로 알려 줄 때 넘길 값을 지정합니다.
+
+    checked: 라디오 버튼의 항목들은 처음에 아무것도 선택되지 않은 상태로 화면에 표시되는데 기본으로 선택해 놓을 항목이 있다면 사용한다. -->
+    <form>
+        <fieldset>
+            <legend>신청 과목</legend>
+           <p>이 달에 신청할 과목을 선택하세요<small>(1과목만가능)</small></p>
+           <label><input type="radio" name="subject" value="speaking" checked> 회화</label>
+           <label><input type="radio" name="subject" value="grammer"> 문법</label>
+           <label><input type="radio" name="subject" value="writing"> 작문</label>
+        </fieldset>
+        <fieldset>
+            <legend>메일링</legend>
+            <p>메일로 받고 싶은 뉴스 주제를 선택해주세요<small>(복수 선택 가능)</small></p>
+            <label><input type="checkbox" name="mailing1" value="news" checked>해외단신</label>
+            <label><input type="checkbox" name="mailing2" value="dialog">5분 회화</label>
+            <label><input type="checkbox" name="mailing3" value="pops">모닝팝스</label>
+        </fieldset>
+        <fieldset>
+            <legend>과 티셔츠 설문</legend>
+            <p>올해 과 티를 만들려고 합니다 원하시는 색상을 선택해주세요</p>
+            <label>선호색상<input type="color" value="#00ff00"></label>
+        </fieldset>
+        <fieldset>
+            <legend>조회기간 선택</legend>
+            <label><input type="date" id="start"></label>
+            <label><input type="date" id="end" ></label>
+        </fieldset>
+        <fieldset>
+            <h2>대관시간을 선택하세요<small>(오늘)</small></h2>
+            <label>시작시간 <input type="time" value="09:00" id="start1"></label><br><br>
+            <label>종료시간<input type="time" value="18:00" id="end1"></label>
+            <h3>대관시간을 선택하세요 <small>(다른 날짜)</small></h3>
+            <label>시작 시간<input type="datetime-local" value="2022-01-01T09:00"></label><br><br>
+            <lebel>종료 시간<input type="datetime-local" value="2020-02-21T18:00"></lebel>
+        </fieldset>
+      
+    </form>
+</body>
+</html>

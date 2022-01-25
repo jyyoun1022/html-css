@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type속성에서 사용가능한 유형</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li {
+            margin:20px;
+        }
+        li label{
+            width: 180px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>type속성 다 해보자</h3>
+        <ul>
+           <li> 
+               <label><input type="hidden" name="이름" value="서버로 넘길값"></label>
+            </li>
+           <li> 
+               <label>아이디<input type="text" name="아이디" size="20" value="서버로 넘길값" maxlength="25"></label>
+            </li>
+           
+
+        </ul>
+    </form>
+</body>
+</html>
