@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>link 스타일</title>
+<style>
+  .container {
+    text-align: left;
+    width: 250px;
+    margin : 0 auto;
+    background: steelblue;
+    padding: 10px;
+  
+  }
+  ul li {
+    margin:20px;
+  }
+  li.hot::after {
+    content:"NEW ARRIVED!!";
+    font-size:x-small;
+    padding:2px 4px;
+    margin: 0 10px;
+    border-radius:2px;
+    background:#f00;
+    color:#fff;
+  }
+  div h1{
+    text-align: center;
+    color: white;
+    text-shadow:2px 2px teal;
+  }
+</style>
+<!--[if lt IE 9]>
+<script src="html5shiv.js"></scirpt>
+<![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <h1 >제품 목록</h1>
+    <ul>
+      <li class="hot">제품 A</li>
+      <li>제품 B</li>
+      <li>제품 C</li>
+      <li class="hot">제품 D</li>
+    </ul>
+  </div>
+</body>
+</html>
