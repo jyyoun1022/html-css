@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Transform</title>
+<style>
+	h1 {
+		text-align:center;
+		font-size:50px;
+	}
+	.tr1 {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		border: 1px solid black;
+		transition-property: background-color, transform, width, height;
+		transition-duration: 2s, 3s;
+		transition-timing-function: linear;
+	  }
+	.tr1:hover {
+		width: 200px;
+		height: 200px;
+		background-color: #ffffff;
+		transform: rotate(360deg);			
+	
+	}
+</style>
+</head>
+
+<body>
+	<div class="tr1"><h1>!</h1> </div>
+</body>
+</html>
